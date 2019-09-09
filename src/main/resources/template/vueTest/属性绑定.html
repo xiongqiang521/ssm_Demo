@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <div v-bind={style:"background-color:red;width:100px;height:100px;"}>
+        <a v-bind:href="zzz">itcast</a>
+
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                id:1,
+                zzz:"http://www.itcast.cn/index/"
+            }
+        })
+    </script>
+
+</div>
+
+</body>
+</html>

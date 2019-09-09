@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:v-on = "http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <script src="../../static/js/Vue-2.6.10.js"></script>
+</head>
+<body>
+    <div id="test1">
+        {{massage}}<hr>
+        <button v-on:click="fun1('12315456')">点击事件</button>
+    </div>
+<script>
+    // 显示数据
+    new Vue({
+        el:"#test1",
+        data: {
+            massage: "123"
+        },
+        methods:{
+            fun1:function (date) {
+                this.massage=date;
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:v-on = "http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset = "UTF-8">
+    <title>按键事件</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="aa">
+        传统：<input type="text" name="test" id="test" v-on:keydown="fun2($event)">
+
+        vue：<input type="text" name="test" id="new">
+
+    </div>
+<script>
+    new Vue({
+        el:"#aa",
+        methods:{
+            fun2:function (event) {
+                let keyCode = event.keyCode;
+                if (keyCode > 48 && keyCode < 59) {
+                    // alert(keyCode);
+                }else{
+                    event.preventDefault();
+                }
+            }
+        }
+        
+    })
+</script>
+</body>
+</html>
