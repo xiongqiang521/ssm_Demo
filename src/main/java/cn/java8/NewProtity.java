@@ -21,7 +21,4 @@ public interface NewProtity {
         stringList.stream().distinct().forEach(str -> System.out.println(str));
     }
 
-    public static void main(String[] args) {
-        NewProtity.method();
-    }
 }
